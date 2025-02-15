@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>basic page</title>
     <style>
+        body {
+            width: 100%;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
         header {
             display: flex;
             align-items: center;
@@ -18,7 +25,8 @@
             justify-content: space-evenly;
         }
 
-        .centralizar {
+        .centralizar,
+        .centralizar2 {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,12 +34,8 @@
         }
 
         .centralizar2 {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
             position: relative;
-            line-height: 0.2;
+            line-height: 1.2;
         }
 
         .centraliza {
@@ -47,27 +51,44 @@
             flex-direction: column;
             right: 0;
             top: 0;
+        }
 
-            ul {
-                list-style-type: none;
-            }
+        .inverte ul {
+            list-style-type: none;
+        }
 
-            li::before {
-                content: "- ";
-                line-height: 1.2;
-            }
-            .bordas{
-            
-                border: 1px solid black;
-                height: 10px;
-                width: 20px;
-            }
-            footer{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+        .inverte li::before {
+            content: "- ";
+        }
 
-            }
+        .bordas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            border: 1px solid black;
+            height: auto;
+            width: 300px;
+            padding: 10px;
+            text-align: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .bordasSeparadadas{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
     </style>
 </head>
@@ -132,13 +153,22 @@
     </section>
     <footer>
         <p><i>Reviews From My Teachers</i></p>
-        <div class="bordas">
-            <p>student always study ut with his assignment</p>
-            <p style="color: rgb(190, 190, 190);">jane doe assistant professor</p>
+        <div class="bordasSeparadadas">
+            <div class="bordas">
+                <p>Student always study hard with his assignment</p>
+                <p style="color: rgb(190, 190, 190);">Jane Doe - Assistant Professor</p>
+            </div>
+            <div class="bordas">
+                <p>Student always study hard with his assignment</p>
+                <p style="color: rgb(190, 190, 190);">Jane Doe - Assistant Professor</p>
+            </div>
+            <div class="bordas">
+                <p>Student always study hard with his assignment</p>
+                <p style="color: rgb(190, 190, 190);">Jane Doe - Assistant Professor</p>
+            </div>
         </div>
-        <p>© all rights reserved 2025</p>
+        <p>© All rights reserved 2025</p>
     </footer>
-
 </body>
 
 </html>

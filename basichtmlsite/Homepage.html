@@ -40,12 +40,34 @@
             position: absolute;
             gap: 20px;
         }
-        .inverte{
+
+        .inverte {
             display: flex;
             position: absolute;
-           right: 0;
-           top: 0;
+            flex-direction: column;
+            right: 0;
+            top: 0;
 
+            ul {
+                list-style-type: none;
+            }
+
+            li::before {
+                content: "- ";
+                line-height: 1.2;
+            }
+            .bordas{
+            
+                border: 1px solid black;
+                height: 10px;
+                width: 20px;
+            }
+            footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            }
         }
     </style>
 </head>
@@ -92,10 +114,30 @@
             <p>made my own projects with 200 GitHub Stars</p>
             <p> <a href="">Visit my GitHub profile</a></p>
             <aside class="inverte">
-                <p>Education</p>
+                <h4>Education</h4>
+                <p>Graduated with 3.76 out of 4 CGPA.</p>
+                <p>won Acme Hackathon. Organized 30 sessions. </p>
+                <p>Courses I took:</p>
+                <ul>
+                    <li>Object oriented Progamming</li>
+                    <li>bla bla bla bla</li>
+                    <li>bla bla bla bla</li>
+                    <li>bla bla bla bla</li>
+                    <li>bla bla bla bla</li>
+                    <li>bla bla bla bla</li>
+                    <li>bla bla bla bla</li>
+                </ul>
             </aside>
         </div>
     </section>
+    <footer>
+        <p><i>Reviews From My Teachers</i></p>
+        <div class="bordas">
+            <p>student always study ut with his assignment</p>
+            <p style="color: rgb(190, 190, 190);">jane doe assistant professor</p>
+        </div>
+        <p>© all rights reserved 2025</p>
+    </footer>
 
 </body>
 

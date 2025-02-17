@@ -1,0 +1,102 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    margin-left: 10px;
+    position: relative;
+}
+
+.liul {
+    flex-grow: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    gap: 50px;
+    padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+
+.centralizar{
+    display: flex;
+    flex-direction: column;
+    line-height: 1px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.centralizar2 {
+    line-height: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.centralizar2 {
+    position: relative;
+    line-height: 1.2;
+}
+
+.centraliza {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 20px;
+}
+
+.inverte {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+}
+
+.inverte ul {
+    list-style-type: none;
+}
+
+.inverte li::before {
+    content: "- ";
+}
+
+.bordas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid black;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.bordasSeparadadas{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
